@@ -1,0 +1,183 @@
+/* Global styles for the page */
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('moroccan-flower.png'); /* Background pattern */
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container to limit width across the layout */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 0 20px; /* Horizontal padding */
+    border-bottom: 2.5px solid #b0b0b0;
+    display: flex;
+    align-items: center; 
+    height: 100px; /* Set fixed height for the header */
+}
+
+/* Header container */
+header .container {
+    display: flex;
+    justify-content: space-between; /* Space between title and nav */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Title styles (blue box around text) */
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #ffffff; /* Text color */
+    background-color: #004080; 
+    padding: 10px 20px; /* Padding inside the blue box */
+    margin: 0;
+    height: 100%; /* Matches the height of the header */
+    display: flex;
+    align-items: center; /* Vertically centers the text inside the h1 */
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: auto; /* Width adjusts to the size of the text */
+}
+
+/* Navigation styles */
+nav {
+    display: flex; 
+    justify-content: flex-end; 
+    gap: 20px; /* Space between links */
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif;
+    color: #004080;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FF4081; /* Hover effect */
+}
+
+span.bar {
+    font-size: 1.5em; 
+    padding: 0 10px; 
+    color: #929292;
+}
+
+/* Main content area */
+main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* About Me Section */
+#about {
+    width: 65%;  /* Adjusted width for balance */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-right: 20px; /* Adds space between About Me and Connect with Me */
+    display: block;
+}
+
+#about h2 {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* About Me Image with text wrapping */
+#about img {
+    float: left; /* Ensures the image is on the left and text wraps around it */
+    width: 180px; 
+    height: auto;
+    margin-right: 15px; /* Adds space between image and text */
+    margin-bottom: 10px;
+    border-radius: 10%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft drop shadow */
+}
+
+#about p {
+    text-align: left;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Connect with Me Section */
+#connect {
+    width: 30%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    margin-left: 20px; /* Adds space between Connect with Me and About Me */
+}
+
+#connect h3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Display icons horizontally with some spacing */
+#connect img {
+    display: inline-block;
+    margin: 10px 5px;
+    width: 50px; /* Adjust the size of the icons */
+    height: 50px;
+    background-color: transparent; /* Ensure the background is transparent */
+    border-radius: 15%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Hover effect for icons */
+#connect img:hover {
+    transform: scale(1.1); /* Scale the icon by 10% on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b0b0b0;
+    color: white;
+    border-top: 4px solid #004080;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+}
+
+/* General paragraph styles */
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
